@@ -1,0 +1,22 @@
+Pong++
+
+James Acer
+Harvard University
+Computer Science 50
+12-7-2013
+Documentation
+
+My project is a mobile web app intended to supplement beer pong games and track player performance. This folder contains three subdirectories: "includes" holds some function definitions; “templates” holds the html templates; and “public” holds the executed PHP files, as well as images and additional JS libraries. As it stands, the application almost exclusively uses JavaScript (and JQuery Mobile), though pages are rendered in PHP. 
+
+My project should be viewed as a partial product, as I did not have the time to implement all of the features I would have liked. Namely, I have not implemented an interface to allow users to set up profiles, nor a SQL database to store their information. I also have not introduced the logic to allow users to store their performance statistics long-term. 
+
+Starting from index.php, the site displays four link buttons. As I said, I did not have time to introduce the full suite of features as I would have liked, and only the very top button—“New Game”—directs to an existing page. Following this link will take the user to game_setup.php, wherein the user is guided to enter the necessary information to begin a new game. In the future, I would like to use this as a page where users can enter a username and password in order to play with and record data into an existing profile. As it stands, however, those fields are not utilized. The four name fields are utilized. After entering the players’ names, the user can click start game to be taken to the game page. 
+
+Game.php models the visual display of an actual beer pong game, incorporating the game’s rules into its display logic. The white ping pong ball image indicates which user’s turn it is—enabling the rack they will shoot at and disabling the rack on their own side. The user can interact with the page by selecting the result of the shot (“airball”, “rimjob”, or “hit”) and the relevant cups (only applicable for a “rimjob” or “hit”). The user can also select “island”, which indicates that island was called on the shot (A “hit” with “island” selected earns two cups, so two must be selected in this case). The “cup” buttons fade out once they are hit. 
+
+The ping pong ball will indicate which player is up in accordance with some standard beer pong rules:
+-A player who has made his three previous shots is “on fire” and gets to continue shooting until he/she misses. 
+-If both members of a team hit on their team’s turn, the team receives an additional turn. In the case that a team’s first shooter catches fire by making his first shot, misses a subsequent shot, and his/her teammate makes his/her shot, the team still receives an extra turn. 
+-Whichever team hits 10 cups first wins. 
+
+After the game ends, a debrief screen is displayed, indicating the winners and the game’s best player. The user is then given the option to “rematch” or return to the home screen.  

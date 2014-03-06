@@ -1,0 +1,21 @@
+Pong++
+
+James Acer
+Harvard University
+Computer Science 50
+12-7-2013
+Design
+
+As I discussed briefly in my documentation, this folder contains three directories: "includes", "templates", and "public". The "templates" directory contains all html templates while the "public" directory contains the executable files, as well as js and jquery libraries. 
+
+I attempted to implement this site in accordance with MVC style. All pages are rendered by separate PHP files. My feeling was that this would most easily allow for game data to be handled and incorporated into an SQL database, which I hope to add in the future. 
+
+Besides these render functions, almost the entirety of the executable code associated with the site is written in JavaScript (specifically, JQuery and JQuery Mobile) and included at the end of the <body>'s of the relevant html template. 
+
+Menu.php is fairly straightforward and not incredibly interesting--it merely acts as a site map. Game_setup.php (which renders setup_template.php) allows the user to input Player information for a game to be played. This form is also fairly straightfoward--I merely utilized a number of JQuery mobile form elements. The form does post to game.php; but I don't utilize that post data (it would likely be useful in building out the game's profile and data tracking feature). I do use a cookie plugin to story the names so that they can be accessed and displayed by actual game page. I also employ JQuery logic to disable the username and password form elements if the player would simply like to play a game without modifying their profile statistics--or if they don't have a profile (again, this is consistent with a future build that incorporates a server-side storage database). 
+
+After clicking the "start game" button, the user is directed to game.php, which renders game_template.php, the file wherein I spent the vast majority of my time on this project. The markup for this page draws heavily from JQuery Mobile. Namely, the cups are actually modified horizontal checkboxes. The Airball/Rimjob/Hit options are a simple set of radio buttons. The "island" checkbox is a simple mini checkbox, and the "record shot" button is a basic button. 
+
+The script for this page first declares a number of arrays in which to track the game. It utilizes JQuery functions to modify some of those variables to indicate the status of the board--clicking on "airball" for example, sets the variable airball to true. I associated similar click functions with all of the buttons on the page. The most relevant click function is on "record shot". Clicking this button triggers a set of code that validates the entry (i.e. is 1 cup selected, is a shot result selected). If the shot is a "hit", that cup is then faded out from the display. This code also evaluates if the current player is on fire or if the current team has made both of its shots, indicating which player is now up accordingly. The player up is indicated by a pong ball next to his/her name--the image is next to each player's name in the markup, but I use JQuery to hide it for players who are not active. 
+
+When either team hits all 10 of its cups, the game ends a debriefing screen is loaded. 
