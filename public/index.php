@@ -17,7 +17,9 @@
 	<div data-role="page">
 
 	    <div data-role="header">
+	        <a href="index.html" data-role="button" data-icon="gear" data-iconpos="notext">Settings</a>
 	        <h1>Messenger</h1>
+	        <a href="index.html" data-role="button" data-icon="plus" data-iconpos="notext">New Group</a>
 	    </div><!-- /header -->
 
 	    <div data-role="content">
@@ -34,6 +36,42 @@
 			    	<div class="ui-bar"> <a href="index.php">
 			    		Basketball </br>
 			    		<img src="img/team.jpg" />
+		    		</a> </div>
+	    		</div>	    		
+
+			</fieldset>
+
+			<fieldset class="ui-grid-a">
+
+			    <div class="ui-block-a">
+			    	<div class="ui-bar"> <a href="index.php">
+			    		Cousins </br>
+			    		<img src="img/cousins.jpg" />
+		    		</a> </div>
+	    		</div>
+
+	    		<div class="ui-block-b">
+			    	<div class="ui-bar"> <a href="index.php">
+			    		My FRAT </br>
+			    		<img src="img/frat.jpg" />
+		    		</a> </div>
+	    		</div>	    		
+
+			</fieldset>
+
+			<fieldset class="ui-grid-a">
+
+			    <div class="ui-block-a">
+			    	<div class="ui-bar"> <a href="index.php">
+			    		Friends from home </br>
+			    		<img src="img/highschool.jpg" />
+		    		</a> </div>
+	    		</div>
+
+	    		<div class="ui-block-b">
+			    	<div class="ui-bar"> <a href="index.php">
+			    		Study Abroad</br>
+			    		<img src="img/studyabroad.jpg" />
 		    		</a> </div>
 	    		</div>	    		
 
