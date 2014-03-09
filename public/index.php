@@ -101,7 +101,49 @@
 		
 	</div><!-- /page -->
 
-	</body>
+	<div data-role="page" id="groupscreen">
+		
 
+		<div data-role="header">
+
+		</div>
+
+		<div data-role="content">
+
+		
+
+		<div data-role="footer" data-position="fixed"> 
+				Copyright &#169; James Acer | Justin Meretab
+		</div> <!-- /footer -->
+		</div><!-- /content -->
+	</div><!-- /page -->
+
+
+	<div data-role="page" id="convo-screen">
+		
+
+		<div data-role="header">
+
+		</div>
+
+		<div data-role="content">
+
+		
+
+		<div data-role="footer" data-position="fixed"> 
+				Copyright &#169; James Acer | Justin Meretab
+		</div> <!-- /footer -->
+		</div><!-- /content -->
+	</div><!-- /page -->
+
+
+
+
+
+
+
+
+
+	</body>
 </html>
 
