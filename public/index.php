@@ -119,7 +119,23 @@
 
 		<div data-role="panel" data-display="overlay" id="settings-panel-1">
 		    <div class="ui-panel-inner">
-		    	<p>Let's put some new settings buttons in here...</p>
+		    	<label for="notifications">Notifications?</label>
+					<select name="notifications" id="notifications" data-role="slider" data-mini="true">
+						<option value="on">On</option>
+						<option value="off">Off</option>
+					</select> 
+					<div data-role="collapsible" data-theme="b" data-content-theme="a">
+					<h2>Add members</h2>
+				    	<ul data-role="listview" data-autodividers="true" data-filter="true" data-inset="true" data-icon="plus" data-filter-placeholder="Enter name/number">
+						    <li><a href="#">Adam Kinkaid</a></li>
+						    <li><a href="#">Alex Wickerham</a></li>
+						    <li><a href="#">Avery Johnson</a></li>
+						    <li><a href="#">Bob Cabot</a></li>
+						    <li><a href="#">Caleb Booth</a></li>
+						    <li><a href="#">Christopher Adams</a></li>
+						    <li><a href="#">Culver James</a></li>
+						</ul>
+					</div>
 	    	</div>
 		</div><!-- /panel -->
 
@@ -133,7 +149,7 @@
 					    <li>
 					    	<div data-role="fieldcontain">
 								<label for="flip-1">Mom</label>
-									<select name="flip-1" id="flip-2" data-role="slider" data-mini="true">
+									<select name="flip-1" id="flip-1" data-role="slider" data-mini="true">
 										<option value="yes">Yes</option>
 										<option value="no">No</option>
 									</select> 
