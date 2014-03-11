@@ -26,7 +26,21 @@
 
 		<div data-role="panel" data-display="overlay" id="new-group-panel" data-position="right">
 		    <div class="ui-panel-inner">
-		    	<p>Let's put some buttons/contacts for making new groups in here...</p>
+		    	<strong>Start a new group</strong>
+		    	<input type="text" name="group-name" id="search" value="" placeholder="Group name">
+		    	<div data-role="collapsible" data-theme="b" data-content-theme="a">
+					<h2>Add contacts</h2>
+			    	<ul data-role="listview" data-autodividers="true" data-filter="true" data-inset="true" data-icon="plus" data-filter-placeholder="Enter name/number">
+					    <li><a href="#">Adam Kinkaid</a></li>
+					    <li><a href="#">Alex Wickerham</a></li>
+					    <li><a href="#">Avery Johnson</a></li>
+					    <li><a href="#">Bob Cabot</a></li>
+					    <li><a href="#">Caleb Booth</a></li>
+					    <li><a href="#">Christopher Adams</a></li>
+					    <li><a href="#">Culver James</a></li>
+					</ul>
+				</div>
+				<a href="#" class="ui-btn ui-shadow">Create Group</a>		    	
 	    	</div>
 		</div><!-- /panel -->
 
@@ -40,7 +54,7 @@
 	    	<fieldset class="ui-grid-a">
 
 			    <div class="ui-block-a">
-			    	<div class="ui-bar"> <a href="index.php">
+			    	<div class="ui-bar"> <a href="#family">
 			    		Family </br>
 			    		<img src="img/family.jpg" />
 		    		</a> </div>
@@ -49,7 +63,7 @@
 	    		<div class="ui-block-b">
 			    	<div class="ui-bar"> <a href="index.php">
 			    		Basketball </br>
-			    		<img src="img/team.jpg" />
+			    		<img src="img/team.jpg"/>
 		    		</a> </div>
 	    		</div>
 			</fieldset>
@@ -101,15 +115,124 @@
 		
 	</div><!-- /page -->
 
-	<div data-role="page" id="groupscreen">
-		
+	<div data-role="page" id="family"><!-- Group screen prototype -->
+
+		<div data-role="panel" data-display="overlay" id="settings-panel-1">
+		    <div class="ui-panel-inner">
+		    	<p>Let's put some new settings buttons in here...</p>
+	    	</div>
+		</div><!-- /panel -->
+
+		<div data-role="panel" data-display="overlay" id="new-thread-panel" data-position="right">
+		    <div class="ui-panel-inner">
+		    	<strong>Start a new thread</strong>
+		    	<input type="text" name="thread-name" id="search" value="" placeholder="Thread name">		    	
+		    	<div data-role="collapsible" data-theme="a" data-content-theme="a">
+					<h2>Set notifications</h2>
+			    	<ul data-role="listview" data-inset="true" data-icon="">
+					    <li>
+					    	<div data-role="fieldcontain">
+								<label for="flip-1">Mom</label>
+									<select name="flip-1" id="flip-2" data-role="slider" data-mini="true">
+										<option value="yes">Yes</option>
+										<option value="no">No</option>
+									</select> 
+							</div>
+						</li>
+					    <li>
+					    	<div data-role="fieldcontain">
+								<label for="flip-2">Dad</label>
+									<select name="flip-2" id="flip-2" data-role="slider" data-mini="true">
+										<option value="yes">Yes</option>
+										<option value="no">No</option>
+							</div>
+						</li>
+					    <li>
+					    	<div data-role="fieldcontain">
+								<label for="flip-3">Robbie</label>
+									<select name="flip-3" id="flip-3" data-role="slider" data-mini="true">
+										<option value="yes">Yes</option>
+										<option value="no">No</option>
+									</select> 
+							</div>
+						</li>
+						<li>
+					    	<div data-role="fieldcontain">
+								<label for="flip-4">Kim</label>
+									<select name="flip-4" id="flip-4" data-role="slider" data-mini="true">
+										<option value="yes">Yes</option>
+										<option value="no">No</option>
+									</select> 
+							</div>
+						</li>
+						<li>
+					    	<div data-role="fieldcontain">
+								<label for="flip-5">Patrick</label>
+									<select name="flip-5" id="flip-5" data-role="slider" data-mini="true">
+										<option value="yes">Yes</option>
+										<option value="no">No</option>
+									</select> 
+							</div>
+						</li>
+					</ul>
+				</div><!-- /list -->
+				<textarea cols="40" rows="8" name="textarea" id="textarea" placeholder="Enter message"></textarea>
+				<a href="#" class="ui-btn ui-shadow">Start Thread</a>
+			</div>    	
+		</div><!-- /panel -->		
 
 		<div data-role="header">
+	        <a href="#settings-panel-1" data-role="button" data-icon="gear" data-iconpos="notext">Settings</a>
+	        <h1>Messenger</h1>
+	        <a href="#new-thread-panel" data-role="button" data-icon="plus" data-iconpos="notext">New Thread</a>
+	    </div><!-- /header -->
 
-		</div>
+	    <div data-role="content">
+	    	<fieldset class="ui-grid-a">
+			    <div class="ui-block-a">
+			    	<div class="ui-bar"> <a href="#family">
+			    		Graduation plans </br>
+		    		</a> </div>
+	    		</div>
 
-		<div data-role="content">
+	    		<div class="ui-block-b">
+			    	<div class="ui-bar"> <a href="index.php">
+			    		Next weekend </br>
+		    		</a> </div>
+	    		</div>
+			</fieldset>
 
+			<fieldset class="ui-grid-a">
+
+			    <div class="ui-block-a">
+			    	<div class="ui-bar"> <a href="index.php">
+			    		Lisa's wedding </br>
+		    		</a> </div>
+	    		</div>
+
+	    		<div class="ui-block-b">
+			    	<div class="ui-bar"> <a href="index.php">
+			    		August vacation </br>
+		    		</a> </div>
+	    		</div>	    		
+
+			</fieldset>
+
+			<fieldset class="ui-grid-a">
+
+			    <div class="ui-block-a">
+			    	<div class="ui-bar"> <a href="index.php">
+			    		Basketball game </br>
+		    		</a> </div>
+	    		</div>
+
+	    		<div class="ui-block-b">
+			    	<div class="ui-bar"> <a href="index.php">
+			    		Study Abroad</br>
+		    		</a> </div>
+	    		</div>	    		
+
+			</fieldset>
 		
 
 		<div data-role="footer" data-position="fixed"> 
