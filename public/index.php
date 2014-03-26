@@ -5,12 +5,15 @@
 	<head> 
 	    <title>Messenger</title> 
 	    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-	    <<link rel="stylesheet" href="../public/css/stylesheet.css"/>
+	    <link rel="stylesheet" href="../public/css/stylesheet.css"/>
 	    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
 	    <script src="../public/js/jquery.cookie.js"></script>
 	    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+		
+		<!-- Code for displaying sent messages in the conversation -->
+		<script src="../public/js/scripts.js"></script>
 	    
 	</head> 	
 	
@@ -203,7 +206,7 @@
 				<a href="#settings-panel-1" data-role="button" data-icon="gear" data-iconpos="notext">Settings</a>
 	        	<a href="#" data-role="button" data-rel="back" data-icon="arrow-l" data-iconpos="notext">Back</a>
     		</div>
-	        <h1>Messenger</h1>
+	        <h1>Family</h1>
 	        <div class="ui-btn-right">
 	        	<a href="#new-thread-panel" data-role="button" data-icon="plus" data-iconpos="notext">New Thread</a>
 	    	</div>
@@ -212,7 +215,7 @@
 	    <div data-role="content" >
 	    	<fieldset class="ui-grid-a">
 			    <div class="ui-block-a">
-			    	<div class="ui-bar"> <a href="#family">
+			    	<div class="ui-bar"> <a href="#convo-screen">
 			    		Graduation plans </br>
 		    		</a> </div>
 	    		</div>
@@ -265,16 +268,26 @@
 
 
 	<div data-role="page" id="convo-screen">
-		
-
 		<div data-role="header">
-
+			<div class="ui-btn-left">
+				<a href="#settings-panel-1" data-role="button" data-icon="gear" data-iconpos="notext">Settings</a>
+	        	<a href="#" data-role="button" data-rel="back" data-icon="arrow-l" data-iconpos="notext">Back</a>
+    		</div>
+	        <h1>Graduation Plans</h1>
+	        <div class="ui-btn-right">
+	        	<a href="#new-thread-panel" data-role="button" data-icon="plus" data-iconpos="notext">New Thread</a>
+	    	</div>
 		</div>
-
 		<div data-role="content">
-
-		
-
+			<!-- Fake Messages -->
+			<div id="incomingMessages" name="incomingMessages" class="msgContainerDiv" >
+				<div class='message'>James Acer: Hey dudes!</div>
+				<div class='message'>Ankur Patel: Shut up Bro</div>				
+			</div>
+			<!-- Text Box for adding new messages -->
+        	<label for="messageText"><strong>Message:</strong></label>
+        	<textarea name="messageText" id="messageText"></textarea>
+        	<div class="ui-block-b"><button data-theme="a" id="chatSendButton" name="chatSendButton">Send</input>
 		<div data-role="footer" data-position="fixed"> 
 				Copyright &#169; James Acer | Justin Meretab
 		</div> <!-- /footer -->
