@@ -20,7 +20,8 @@
 
 		<div data-role="panel" data-display="overlay" id="settings-panel-1">
 		    <div class="ui-panel-inner">
-		    	<p>Let's put some settings buttons in here...</p>
+		    	<a href="#" class="ui-btn ui-shadow">Settings</a>	
+		    	<a href="#" class="ui-btn ui-shadow">Log Out</a>	
 	    	</div>
 		</div><!-- /panel -->
 
@@ -115,7 +116,7 @@
 		
 	</div><!-- /page -->
 
-	<div data-role="page" id="family"><!-- Group screen prototype -->
+	<div data-role="page" id="family" data-add-back-btn="true"><!-- Group screen prototype -->
 
 		<div data-role="panel" data-display="overlay" id="settings-panel-1">
 		    <div class="ui-panel-inner">
@@ -198,12 +199,17 @@
 		</div><!-- /panel -->		
 
 		<div data-role="header">
-	        <a href="#settings-panel-1" data-role="button" data-icon="gear" data-iconpos="notext">Settings</a>
+			<div class="ui-btn-left">
+				<a href="#settings-panel-1" data-role="button" data-icon="gear" data-iconpos="notext">Settings</a>
+	        	<a href="#" data-role="button" data-rel="back" data-icon="arrow-l" data-iconpos="notext">Back</a>
+    		</div>
 	        <h1>Messenger</h1>
-	        <a href="#new-thread-panel" data-role="button" data-icon="plus" data-iconpos="notext">New Thread</a>
+	        <div class="ui-btn-right">
+	        	<a href="#new-thread-panel" data-role="button" data-icon="plus" data-iconpos="notext">New Thread</a>
+	    	</div>
 	    </div><!-- /header -->
 
-	    <div data-role="content">
+	    <div data-role="content" >
 	    	<fieldset class="ui-grid-a">
 			    <div class="ui-block-a">
 			    	<div class="ui-bar"> <a href="#family">
